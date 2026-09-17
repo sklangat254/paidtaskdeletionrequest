@@ -8,7 +8,7 @@ from flask import Flask, render_template_string, request, jsonify
 
 app = Flask(__name__)
 
-# --- Firebase config (set these as environment variables on Render/Vercel — never hardcode secrets in code you might publish or commit) ---
+# --- Firebase config (set these as environment variable on Render/Vercel — never hardcode secrets in code you might publish or commit) ---
 FB_HOST = os.environ.get("FB_HOST", "https://aviabustout-default-rtdb.firebaseio.com")
 FB_AUTH = os.environ.get("FB_AUTH", "")  # set this in your host's dashboard, do not commit it
 
